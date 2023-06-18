@@ -1,0 +1,566 @@
+@import "vars"
+@import "fonts"
+
+//start global style
+body 
+    font-family: $main-font
+    font-size: 16px 
+    font-weight: 400
+    color: $black-text
+.container-fluid 
+    width: 1325px 
+    padding-left: 0 
+    padding-right: 0 
+    max-width: 88.372vw
+p 
+    margin-bottom: 0
+.container-fluid--xs
+    width: 1150px
+.button 
+    background: $gold 
+    color: #fff 
+    transition: all 0.3s
+    text-decoration: none
+    height: 52px
+    display: flex 
+    align-items: center 
+    justify-content: center
+    font-weight: 500
+    border-radius: 2px
+.button:hover 
+    background: $gold-hover
+    color: #fff
+.h1
+    font-size: 70px
+    color: #fff 
+    text-transform: capitalize
+    span 
+        font-weight: 400
+        color: #DEDEDE
+.h2 
+    font-size: 40px 
+    font-weight: 700
+    margin-bottom: 30px
+.h3 
+    font-size: 18px 
+    font-weight: 500
+    font-family: $manrope 
+    text-transform: uppercase
+.bold 
+    font-weight: 700
+.white 
+    color: #fff
+.text-18 
+    font-size: 18px
+.sub-title 
+    font-family: $secondary-font2
+    color: $gold
+    margin-bottom: 15px
+    text-transform: uppercase
+.button--transparent-gold
+    color: $gold
+//end global style 
+
+//start header style 
+.header 
+    position: absolute 
+    top: 0 
+    left: 0 
+    width: 100%
+    padding-top: 30px 
+    padding-bottom: 20px
+    .container-fluid 
+        width: 1325px 
+        max-width: 88.372vw
+        display: flex
+        align-items: center
+        justify-content: space-between
+.header__button 
+    height: 51px 
+    padding: 0 30px
+    text-transform: uppercase
+    font-family: $secondary-font2
+.mobile-menu
+    display: none
+.menu 
+    ul 
+        display: flex 
+        align-items: center
+        margin: 0 
+        padding: 0
+        list-style: none
+        li 
+            margin: 0 16px
+        a 
+            text-decoration: none
+            color: #fff
+            text-transform: uppercase
+            font-family: $secondary-font
+            font-weight: 500
+        a:hover 
+            text-decoration: underline
+.menu-btn 
+    display: none
+//end header style
+
+//start main-screen style 
+.main-screen 
+    padding-top: 250px 
+    padding-bottom: 250px
+    background: url('../img/main-screen.png')
+    background-size: cover 
+    background-position: center  
+    .container-fluid 
+        width: 1150px
+    .h1 
+        margin-bottom: 42px
+    .text-18 
+        color: #fff
+        margin-bottom: 30px
+.main-screen__buttons
+    display: flex
+    .button 
+        width: 171px 
+        height: 52px
+        margin-right: 19.67px
+.button--transparent
+    background: transparent 
+    border: 1px solid $gold
+.button--transparent:hover 
+    border-color: $gold-hover
+//end main screen style 
+
+//start about style 
+.about 
+    padding-top: 96px 
+    padding-bottom: 118px
+    p 
+        font-weight: 300 
+        font-size: 34px
+        width: 1130px 
+        max-width: 100%
+        color: $black-text
+//end about style 
+
+//start tabs section 
+.tabs-section
+    padding-bottom: 76px
+.tabs-wrapper
+    background: #000
+.tabs-list
+    width: 490px
+    min-width: 490px
+    height: 100%
+    padding-top: 73px 
+    padding-bottom: 73px
+    background: url('../img/bg.svg')
+    background-size: cover
+
+.tab 
+    color: #8E8E8E
+    text-transform: uppercase
+    font-size: 30px
+    margin-bottom: 36px
+    cursor: pointer
+    font-weight: 500
+
+.tab.active 
+    color: $gold
+    font-weight: 700
+.tab:last-child 
+    margin-bottom: 0
+.tabs-list 
+    display: flex 
+    justify-content: center
+.tab__item
+    color: #fff
+    display: none
+.tab__item:first-child 
+    display: block
+.tabs-wrapper
+    display: flex 
+    align-items: center
+    
+.tabs-content 
+    padding-left: 130px 
+    padding-right: 50px  
+    width: 650px 
+    max-width: 100% 
+.line 
+    width: 50px 
+    height: 1px 
+    background: $gold 
+    margin-bottom: 22px
+.tab__item-text 
+    font-size: 22px
+    color: $grey
+//end tabs section
+
+//start offer section 
+.offer-list
+    padding-top: 30px 
+.what-we-offer
+    padding-bottom: 112px 
+.offer-item
+    width: 100% 
+    background: #F5F5F5 
+    padding: 29px 16px
+    padding-right: 5px
+    cursor: pointer
+    display: flex 
+    flex-direction: column 
+    justify-content: space-between
+    text-decoration: none
+    height: 100%
+    
+    .h3 
+        margin-top: 20px 
+        margin-bottom: 25px
+        color: $black-text
+    p 
+        color: $grey-text
+.read-more 
+    color: $black-text
+    text-decoration: none
+    font-size: 14px 
+    font-weight: 500 
+    margin-top: 10px
+    display: flex
+    align-items: center
+    font-family: $secondary-font2
+    svg 
+        fill: $black-text
+        margin-left: 8px
+.offer-item:hover
+    background: #000
+    .h3 
+        color: #fff
+    p 
+        color: #959595
+    .read-more 
+        color: $gold
+        svg 
+            fill: $gold
+//end offer section 
+
+//start statistic section
+.statistic-section 
+    padding-bottom: 90px
+.statistic-wrapper
+    background: #000
+    padding-top: 100px
+    padding-bottom: 100px
+    background-image: url('../img/stat-bg.svg')
+    background-repeat: no-repeat
+    background-position: top left
+.statistic__content 
+    width: 1040px
+    max-width: 95%
+    margin-left: auto 
+    margin-right: auto
+.statistic-title
+    color: $gold
+    font-size: 40px
+    font-weight: 700
+.statistic-header
+    display: flex
+    padding-bottom: 56px
+    border-bottom: 1px solid #fff
+    margin-bottom: 97px
+.statistic-title
+    min-width: 50%
+.statistic-header-text
+    color: $grey
+    width: 459px 
+    max-width: 50%
+.statistic-row
+    color: #fff 
+    display: flex 
+    justify-content: space-between
+.statistic-item
+    width: 33.3% 
+    display: flex
+    justify-content: center
+    position: relative
+.statistic-item:first-child
+    justify-content: flex-start
+.statistic-item:last-child
+    justify-content: flex-end
+.statistic-item__title
+    color: $gold
+    font-family: $manrope
+    margin-bottom: 10px
+.statistic-item__value
+    font-size: 66px
+.statistic-item__text
+    text-transform: uppercase
+    color: #8F8F8F
+.statistic-item:nth-child(2):before 
+    content: ''
+    width: 1px 
+    height: 96px
+    background: rgba(255, 255, 255, 0.5)
+    position: absolute 
+    top: 50%
+    transform: translateY(-50%)
+    left: 0
+.statistic-item:nth-child(2):after
+    content: ''
+    width: 1px 
+    height: 96px
+    background: rgba(255, 255, 255, 0.5)
+    position: absolute 
+    top: 50%
+    transform: translateY(-50%)
+    right: 0
+//end statistic section
+
+//start investment approach
+.investment-approach
+    padding-bottom: 90px
+    p 
+        margin-bottom: 20px
+    .button--transparent 
+        color: #000
+    .button--transparent:hover 
+        color: #fff
+    .main-screen__buttons
+        margin-top: 41px
+.investment-approach__text
+    width: 487px 
+    max-width: 100%
+.accordion
+    background: #FFFFFF
+    border: 1px solid #CCCCCC
+    box-shadow: 0px 0px 54px rgba(109, 109, 109, 0.09)
+    padding: 45px
+    padding-bottom: 0
+.accordion__item-header
+    display: flex 
+    align-items: center 
+    justify-content: space-between
+    padding-top: 28px 
+    
+    cursor: pointer
+.accordion__item-text
+    display: none
+    padding-top: 28px
+.accordion__item-title
+    font-size: 22px 
+    font-weight: 700
+.accordion__item
+    transition: all .3s
+.accordion__item.active 
+    img 
+        transform: rotate(-180deg)
+        transition: all .3s
+.accordion__item 
+    border-bottom: 1px solid #C1C1C1
+    padding-bottom: 28px
+.accordion__item:last-child 
+    border-bottom: none
+//end investment approach
+
+//start forward thinking
+.forward-thinking 
+    padding-bottom: 90px
+.forward-thinking__img
+    width: 100%
+.forward-thinking
+    .main-screen__buttons
+        margin-top: 36px 
+        .button--transparent
+            color: #000
+//end forward thinking 
+
+//start map section style
+.map-section
+    background: #000
+    padding-top: 90px
+    padding-bottom: 131px
+    .h2 
+        margin-bottom: 110px
+.map-wrapper 
+    width: 1153px
+    max-width: 100%
+    margin-left: auto 
+    margin-right: auto
+    position: relative
+    img 
+        max-width: 100%
+.pin
+    position: absolute
+    cursor: pointer
+    svg 
+        fill: #fff
+.pin1 
+    top: 33.274% 
+    left: 26.215%
+.pin2 
+    top: 28.292%
+    left: 50.737% 
+.pin3
+    top: 44%
+    left: 62.793%
+.pin4
+    top: 49.5%
+    left: 61.145%
+.pin5 
+    top: 46%
+    left: 79.965%
+.pin-disable
+    position: absolute 
+    top: 0 
+    left: 50% 
+    transform: translateX(-48%) translateY(-100%)
+    width: 111px 
+    height: 66px 
+    background: url('../img/city.svg')
+    background-size: 100%
+    text-align: center
+    font-size: 16px 
+    text-transform: uppercase 
+    font-weight: 500 
+    color: #fff
+    padding-top: 11px
+    opacity: 0
+    visibility: hidden
+.pin svg:hover + .pin-disable
+    opacity: 1
+    visibility: visible
+.elips 
+    position: absolute 
+    width: 100% 
+    top: 100%
+    transform: translateY(-60%)
+//end map section style
+
+//start portfolio style
+.portfolio 
+    padding-top: 90px
+    padding-bottom: 66px
+.logo-item
+    width: 18%
+    background: #F5F5F5
+    height: 100px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-bottom: 24px
+    img 
+        max-width: 80%
+.logos-row
+    display: flex 
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-top: 60px
+//end portfolio style
+
+//start faq style 
+.faq 
+    padding-bottom: 90px
+    .button 
+        margin-top: 58px
+        width: 170px
+.faq-wrapper
+    background: #000
+    display: flex
+.faq__title-wrapper
+    min-height: 100% 
+    min-width: 490px
+    padding-top: 104px 
+    padding-bottom: 72px
+    color: #fff
+    padding-left: 64px 
+    padding-right: 15px
+    background: url('../img/dots.png')
+.faq-content 
+    padding: 60px 97px 72px 59px
+    width: calc(100% - 490px)
+.accordion-black__item
+    color: #fff
+    width: 100%
+    padding-top: 31px 
+    padding-bottom: 31px
+    border-bottom: 1px solid #828282
+    
+.accordion-black__item-text
+    display: none
+    padding-top: 31px
+    color: #AFAFAF
+    width: 573px 
+    max-width: 100%
+.accordion-black__item-header
+    display: flex 
+    justify-content: space-between 
+    align-items: center
+    cursor: pointer
+.faq-content
+    width: 100%
+//end faq style 
+
+//start footer style 
+.footer 
+    background: #000 
+    color: rgba(#fff, 0.5)
+    font-weight: 300
+    padding-top: 56px
+    
+    .container-fluid 
+        display: flex
+        justify-content: space-between
+.footer__left 
+    width: 515px 
+    max-width: 50%
+    border-right: 1px solid rgba(255, 255, 255, 0.5)
+    padding-right: 50px 
+.footer__logo
+    margin-bottom: 16px  
+    display: block
+.footer__social
+    margin-top: 27px
+    display: flex
+    a 
+        text-decoration: none
+        display: block
+        margin-right: 13px
+.footer__menu-col
+    a 
+        display: block
+.footer__menu
+    display: flex
+.footer__menu-col
+    margin-left: 142px
+.footer__menu-title
+    color: $gold
+    font-weight: 500 
+    text-transform: uppercase
+    text-decoration: underline 
+    margin-bottom: 35px
+.footer__menu-link
+    color: rgba(#fff, 0.5)
+    font-weight: 300 
+    margin-bottom: 13px
+    text-decoration: none 
+    white-space: nowrap
+    text-transform: capitalize
+.footer__menu-link:hover 
+    color: #fff
+.footer__menu-title:hover
+    color: $gold
+.footer__bottom
+    background: #121212
+    margin-top: 52px
+    text-align: center
+    padding-top: 16px 
+    padding-bottom: 16px
+    color: #9F9F9F 
+    text-transform: uppercase
+    font-family: $secondary-font
+    font-size: 14px
+//end footer style 
+
+@import "media"
+
+
+
