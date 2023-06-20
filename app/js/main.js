@@ -4,8 +4,14 @@ $(function(){
         $('.menu').toggleClass('active');
     })
 
+    $('.menu-btn').click(function(){
+        $('.logo-white').toggleClass('show');
+        $('.logo-black').toggleClass('hide');
+    })
 
-
+    $('.close-cookies, .accept-cookies').click(function(){
+        $('.cookies').hide();
+    })
 });
 
 $(function(){
@@ -45,3 +51,11 @@ $('.accordion-black__item-header').click(function(){
    $(this).parent().addClass('active');
  }
 });
+
+$('.cookies-setting-btn').click(function(){
+    $('.cookies-setting').fadeIn();
+})
+
+$('.allow-cookies, .confirm-cookies').click(function(){
+    $('.cookies-setting').fadeOut();
+})

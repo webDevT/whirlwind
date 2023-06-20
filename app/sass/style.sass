@@ -775,6 +775,277 @@ p
     background-color: #111010
 //end contact style    
 
+//start header white 
+.header--white 
+    position: static 
+    .menu ul a
+        color: #000
+    
+//end header white
+
+
+//start terms main screen
+.terms-main-screen
+    padding-top: 108px 
+    padding-bottom: 113px
+    background: url('../img/terms-ms.png')
+    background-size: cover 
+    background-position: center
+.terms-main-screen__title
+    color: #fff
+    font-size: 50px
+.logo-black.hide
+    display: none
+.logo-white
+    display: none
+.logo-white.show
+    display: block
+.terms
+    padding-top: 99px 
+    padding-bottom: 100px
+.text-18
+    margin-bottom: 25px
+
+.section-header
+    margin-top: 103px
+.terms-item
+    margin-top: 68px
+.terms
+    ul 
+        margin-top: 56px
+        margin-bottom: 56px
+    li
+        margin-bottom: 15px
+.section-header--margin
+    margin-top: 0
+//end terms main screen 
+
+//start cookies
+.cookies
+    position: fixed 
+    bottom: 0 
+    left: 0 
+    width: 100%
+    z-index: 999
+    background: #fff
+    padding-top: 22px
+    padding-bottom: 22px
+    .container-fluid 
+        display: flex
+        justify-content: space-between
+.cookies-text
+    width: 767px
+    max-width: 90%
+.close-cookies
+    cursor: pointer
+.cookies-button
+    display: flex
+    align-items: center
+    .button,
+    .link 
+        display: block
+        white-space: nowrap
+        margin-left: 34px
+        width: 169px 
+        height: 50px
+        display: flex 
+        align-items: center
+        justify-content: center
+.right-cookies
+    display: flex
+.close-cookies
+    margin-left: 50px
+.link
+    text-decoration-line: underline
+    text-transform: capitalize
+    color: #000000
+    cursor: pointer
+.link:hover
+    color: #000000 
+.cookies-setting
+    background: rgba(0, 0, 0, 0.7)
+    position: fixed 
+    top: 0 
+    left: 0
+    width: 100% 
+    height: 100%
+    z-index: 999
+    overflow-y: auto
+    display: none
+    .button 
+        cursor: pointer
+.cookies-setting__modal
+    position: absolute 
+    top: 3vw 
+    left: 50% 
+    transform: translateX(-50%)
+    background: #fff
+    padding: 51px
+    width: 819px 
+    max-width: 100%
+    
+.modal-logo
+    margin-bottom: 46px
+.modal-text
+    margin-top: 30px
+    margin-bottom: 50px
+    p 
+        margin-bottom: 16px
+.cookies-setting
+    .text-18 
+        margin-bottom: 0
+    .button--transparent
+        width: 168px
+        color: #000
+.setting-wrapper
+    margin-top: 36px 
+    margin-bottom: 36px 
+    border: 1px solid #B9B9B9
+    border-radius: 4px 
+.setting-item
+    padding-top: 17px 
+    padding-bottom: 17px 
+    border-bottom: 1px solid #B9B9B9
+    padding-left: 30px 
+    padding-right: 30px
+.setting-item:last-child 
+    border-bottom: none
+//end cookies 
+/* The switch - the box around the slider */
+.switch
+    position: relative
+    display: inline-block
+    width: 45px
+    height: 23.82px
+/* Hide default HTML checkbox */
+.switch input
+    opacity: 0
+    width: 0
+    height: 0
+/* The slider */
+.slider
+    position: absolute
+    cursor: pointer
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: #ccc
+    -webkit-transition: .4s
+    transition: .4s
+.slider:before
+    position: absolute
+    content: ""
+    height: 18px
+    width: 18px
+    left: 4px
+    bottom: 3px
+    background-color: white
+    -webkit-transition: .4s
+    transition: .4s
+.input-checkbox:checked + .slider
+    background-color: $gold
+.input-checkbox:focus + .slider
+    box-shadow: 0 0 1px $gold
+.input-checkbox:checked + .slider:before
+    -webkit-transform: translateX(20px)
+    -ms-transform: translateX(20px)
+    transform: translateX(20px)
+/* Rounded sliders */
+.slider.round
+    border-radius: 34px
+.slider.round:before
+    border-radius: 50%
+.setting-item
+    display: flex 
+    align-items: center
+    justify-content: space-between
+
+//start coming-soon style 
+.coming-soon
+    min-height: 100vh 
+    min-width: 100%
+    background: url('../img/coming-soon.png')
+    background-size: cover
+    background-position: center
+    .container-fluid 
+        display: flex 
+        flex-wrap: wrap
+        color: #fff
+        padding-top: 22px
+.logo-coming
+    width: 50%
+    height: 46px
+.coming-soon__sicial
+    width: 50%
+    height: 46px
+    display: flex 
+    justify-content: flex-end
+    svg 
+        fill: #fff
+        opacity: 0.5
+        transition: all .3s
+    svg:hover 
+        opacity: 1
+    a 
+        margin-left: 16px
+.coming-soon__content
+    text-align: center
+    width: 100%
+    min-height: calc( 100vh - 68px )
+    display: flex 
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    .text-18 
+        color: #A5A5A5
+.coming-soon__title
+    font-size: 55px
+    margin-bottom: 20px
+    span 
+        font-weight: 700
+.coming-soon__form
+    height: 45.87px
+    input 
+        height: 100%
+        outline: none 
+        background: transparent
+        border: 1.17614px solid #ABABAB
+        margin: 0
+        color: #fff
+    .coming-soon__input
+        width: 246px
+        padding-left: 16px
+
+.comiing-soon__input-button
+    height: 100%
+    outline: none 
+    background: transparent
+    border: 1.17614px solid #ABABAB
+    margin: 0
+    color: #fff
+    display: flex 
+    text-decoration: none
+    display: flex 
+    justify-content: center
+    align-items: center
+    text-transform: uppercase
+.comiing-soon__input-button
+    width: 170px
+    border-left: none
+    color: #fff 
+    font-weight: 500
+.coming-soon__form
+    display: flex 
+    justify-content: center
+    background: rgba(255, 255, 255, 0.19)
+    color: #fff
+.comiing-soon__input-button:hover 
+    color: #fff
+    
+//end coming-soon style 
+
+
 @import "media"
 
 
